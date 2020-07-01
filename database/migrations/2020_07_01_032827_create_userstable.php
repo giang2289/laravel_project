@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -15,11 +16,15 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name',100);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->integer('phone');
             $table->string('password');
+            $table->string('address',255);
             $table->rememberToken();
+            $table->tinyInteger('gender');
+            $table->tinyInteger('status');
             $table->timestamps();
         });
     }

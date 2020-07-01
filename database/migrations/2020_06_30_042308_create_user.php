@@ -23,7 +23,7 @@ class CreateUser extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->tinyInteger('gender');
-           $table->tinyInteger('status');
+            $table->tinyInteger('status');
             
             
             $table->timestamps();

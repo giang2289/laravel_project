@@ -22,7 +22,15 @@ $factory->define(User::class, function (Faker $faker) {
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'email_verified_at' => now(),
-        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+        'phone'=> $faker->phoneNumber(6),
+        'password' => '123456', // password        
+        'address'=> $faker->city,
         'remember_token' => Str::random(10),
+        'gender'=>$faker->numberBetween(1,2),
+        'status'=>$faker->numberBetween(1,2),
+        'created_at' => new DateTime,
+        'updated_at' => new DateTime,
     ];
 });
+
+
