@@ -13,6 +13,7 @@ class CreateComment extends Migration
      */
     public function up()
     {
+      
         Schema::create('comment', function (Blueprint $table) {
             $table->id();
             $table->string('content');
