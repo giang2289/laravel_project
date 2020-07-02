@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Middleware;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/1', function () {
     return view('welcome');
 });
 Route::get('/aa', function () {
     return view('Admin/login');
+});
+Route::get('/', function () {
+    return view('index');
+});
+//Test
+Route::get('/test',function(){
+	'uses'=> 'Admin\TestController@index',
+
+});
+
+//Test Admin controller
+Route::group(['prefix' =>'admin'],function(){
+	Route::get('/test/12',[
+		'uses'=> 'TestController@index'
+	]);
+});
+Route::namespace(['namespace'=>'Admin','prefix'=>'admin'],function(){
+	Route::get('/product',[
+		'uses' => 'ProductController@index'
+	]);
+});
+
+Route::namespace(['namespace'=>'Admin',],function(){
+	Route::get('/ad/product',[
+		'uses' => 'ProductController@index',
+	]);
 });
