@@ -1,0 +1,234 @@
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../font/montserrat/Montserrat-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../font/montserrat/Montserrat-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Courgette-Regular;
+  src: url('../font/courgette/Courgette-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../font/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../font/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../font/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url('../font/poppins/Poppins-Light.ttf'); 
+}
+
+@font-face {
+  font-family: NotoSans-Regular;
+  src: url('../font/notosans/NotoSans-Regular.ttf'); 
+}
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url('../font/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf'); 
+  }
+body {
+    font-family :"Montserrat",sans-serif;
+}
+body{
+    font-family: 'Poppins','Courgete';
+}
+p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+}
+/* header */
+    .header_top{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background: rgba(183, 0, 0, 0.8) ;
+        width:100%;
+       
+    }
+   
+   /* .header_top .header_logo img{
+        background: rgb(255, 0, 0);
+    }*/
+    .header_logo img{ 
+        max-width:150px;
+        height :100px;
+    }
+    .header_top .header_text{
+       flex: 1;
+       justify-content: flex-end ;
+       flex-basis: 100% ;
+       display: flex    ;
+       color: white;
+       align-items: center  ;
+       padding-top: 15px;
+       padding-right: 15px;
+    }
+/* menu */
+
+.menu-fixed{
+   
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 20;
+    background-color: red;
+    }
+.vA-container{
+    width:100%;
+    max-width: 1170px;
+    margin:0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.txt28{
+    font-size :32px;
+    font-weight :600;
+}
+.txt21{
+    font-size :21px;
+    font-weight :400;
+}
+.txt20{
+    font-size :21px;
+    font-weight :400;
+    color : #ff6633;
+}
+.txt16{
+    font-size :16px;
+    font-weight :400;
+}
+.m-r-10{margin-right: 10px;}
+.test-1{
+   
+    padding-right: 20px;
+    padding-left: 0px!important;
+}
+
+.blog-item h3 a,.footer-item a{
+    text-decoration: none;
+    color: black;
+}
+.footer-item a{
+    color:white;
+}
+.blog-item span{
+    display: block;
+}
+.blog-item{
+    padding-top: 15px;
+}
+.blog-item:first-child{
+    padding-top: 0px;
+}
+.btn-blog-detail{
+    background-color: red;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.btn-blog-detail a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+.relate-blog .blog-thumb{
+    width: 110px;
+    padding-right: 5px;
+    display: inline-block;
+    float: left;
+}
+.relate-blog .blog-thumb img{
+    width: 100%;
+}
+.relate-blog .blog-content{
+    display: inline-block;
+
+}
+.border-blog{
+    border: 1px solid black;
+/*  margin-top: 5px;
+margin-bottom: 5px; */
+    clear: left;
+}
+.relate-blog .blog-content {
+    width: calc(100% - 115px);
+}
+.relate-blog {
+    float: left;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+body{
+    font-family: Montserrat,sans-serif;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* cssfooter */
+.footer-wrap{
+    background: #2e2e2e;
+    color:white;
+}
+.footer-content{
+    padding-top: 15px;
+/* padding-bottom: 150px; */
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.footer-wrap .footer-content h3{
+    color: #fff000;
+}
+.text-align{
+    text-align:center;
+}
+.p-t-20{padding-top: 20px;}
+.m-b-10{margin-bottom: 50px;}
+.footer-en{
+    margin: 0 auto;
+}
+.bg1-pattern {
+    background-image: url('../images/pattern1.png');
+    background-repeat: repeat;
+}.bg2-pattern{
+	background-image: url('../images/pattern2.png');
+		background-repeat: repeat;
+}
+.bg3-pattern{
+	background-image: url('../images/pattern3.png');
+	background-repeat: repeat;
+}
+
