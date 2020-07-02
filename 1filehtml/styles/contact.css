@@ -1,0 +1,33 @@
+
+#map{
+  padding-left:10px;
+    height :100%;
+    width :100%;
+}
+.clearfix:after{
+    clear:both;
+    display:block;
+    content :"";
+}
+
+    .sidebarElement {
+      padding: 6px;
+      display: table;
+      width: 95%;
+    }
+    .infoSidebarElement {
+      display: table-cell;
+      cursor: pointer;
+      width: 90%;
+    }
+    .ct_mapSidebar{
+  
+      background-color: white;
+      z-index: 10;
+      width: 30%
+    }
+    .ct_mapSidebar a {
+      text-decoration: none;
+      color: 	#ff6633;
+      font-size :16px;
+    }
