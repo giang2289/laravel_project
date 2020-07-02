@@ -22,19 +22,19 @@ Route::get('/aa', function () {
 Route::get('/', function () {
     return view('index');
 });
-//Test
-Route::get('/test',function(){
-	'uses'=> 'Admin\TestController@index',
+// //Test
+// Route::get('/test',function(){
+// 	'uses'=> 'Admin\TestController@index',
 
-});
+// });
 
 //Test Admin controller
 Route::group(['prefix' =>'admin'],function(){
 	Route::get('/test/12',[
-		'uses'=> 'TestController@index'
+		'uses'=> 'Admin\TestController@index'
 	]);
 });
-Route::namespace(['namespace'=>'Admin','prefix'=>'admin'],function(){
+Route::group(['namespace'=>'Admin','prefix'=>'admin'],function(){
 	Route::get('/product',[
 		'uses' => 'ProductController@index'
 	]);

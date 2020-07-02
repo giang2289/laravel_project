@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Models;
 class ProductController extends Controller
 {
     /**
@@ -15,12 +15,9 @@ class ProductController extends Controller
     public function index()
     {
         //
-       
-        // return view ('Admin.index',[
-        //      'products' = models\Product::select('name')->pagnite(9);
-
-        // ]);
-        echo "chaof mung ban den voi laravel";
+        $products  = Models\Product::all();
+        echo $products;
+        echo "chaof mung ban den voi laravel111";
     }
 
     /**
