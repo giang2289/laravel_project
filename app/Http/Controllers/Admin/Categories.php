@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models;
-class ProductController extends Controller
+class Categories extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,29 +15,6 @@ class ProductController extends Controller
     public function index()
     {
         //
-        $products  = Models\Product::all();
-       
-        // echo "chaof mung ban den voi laravel111";
-        // return view('Admin.index');
-        return view('Admin.index', ['products' =>  $products,]);
-    }
-    /**
-     * Show the list product
-     *
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function product()
-    {
-        //
-        // $products  = Models\Product::all();
-       
-        // echo "chaof mung ban den voi laravel111";
-        // return view('Admin.index');
-       
-      echo "abc";
-
     }
 
     /**
@@ -48,8 +25,6 @@ class ProductController extends Controller
     public function create()
     {
         //
-        echo "xyz";
-
     }
 
     /**

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models;
-class ProductController extends Controller
+class CategoriesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,28 +15,23 @@ class ProductController extends Controller
     public function index()
     {
         //
-        $products  = Models\Product::all();
-       
-        // echo "chaof mung ban den voi laravel111";
-        // return view('Admin.index');
-        return view('Admin.index', ['products' =>  $products,]);
+
+        return view('Admin.index');
+      
     }
-    /**
-     * Show the list product
-     *
+     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function product()
+
+    public function cate()
     {
         //
-        // $products  = Models\Product::all();
+        $category = Models\Categories::all()
+                    ->sortBy('id');
        
-        // echo "chaof mung ban den voi laravel111";
-        // return view('Admin.index');
-       
-      echo "abc";
+       return view('Admin/Cate/listcate',['listCate'=> $category]);
 
     }
 
@@ -48,7 +43,9 @@ class ProductController extends Controller
     public function create()
     {
         //
-        echo "xyz";
+     
+        
+        return view('Admin/Cate/addcate');
 
     }
 

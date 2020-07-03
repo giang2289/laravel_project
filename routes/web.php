@@ -22,26 +22,31 @@ Route::get('/aa', function () {
 Route::get('/', function () {
     return view('index');
 });
-// //Test
-// Route::get('/test',function(){
-// 	'uses'=> 'Admin\TestController@index',
 
-// });
+	//Controller Admin Category
+Route::group(['namespace'=>'Admin','prefix'=>'AdminCat'],function(){
+	
+	// Route resource Admin Product
+	Route::get('/','CategoriesController@index')->name('indexCate');
+	Route::get('/addCate','CategoriesController@create')->name('addcate');
+	
+	
+	Route::get('/listcate','CategoriesController@cate')->name('adminlistCate');
+	
+	
+});
+//Test Admin controller Product
 
-//Test Admin controller
-Route::group(['prefix' =>'admin'],function(){
-	Route::get('/test/12',[
-		'uses'=> 'Admin\TestController@index'
+Route::group(['namespace'=>'Admin','prefix'=>'AdminProd'],function(){
+	// Route resource Admin Product
+	Route::resource('/', 'ProductController@index');
+	Route::resource('/', 'ProductController')->names([
+		'create' =>'addproduct'
 	]);
-});
-Route::group(['namespace'=>'Admin','prefix'=>'admin'],function(){
-	Route::get('/product',[
-		'uses' => 'ProductController@index'
-	]);
+	
+	Route::get('/listproduct','ProductController@product')->name('adminlistProduct');
+	
+	
 });
 
-Route::namespace(['namespace'=>'Admin',],function(){
-	Route::get('/ad/product',[
-		'uses' => 'ProductController@index',
-	]);
-});
+View::share('Ten','giang');
