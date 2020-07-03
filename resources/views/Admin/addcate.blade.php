@@ -1,5 +1,6 @@
 
-@extends('Admin.Cate.indexAdCate')
+@extends('layouts.adminlayout')
 
 @section('Admin.content')
+ them cate
 @endsection
