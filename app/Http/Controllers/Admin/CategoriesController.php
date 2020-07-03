@@ -16,7 +16,7 @@ class CategoriesController extends Controller
     {
         //
 
-        return view('Admin.index');
+        return view('Admin.indexAdmin');
       
     }
      /**
@@ -31,7 +31,7 @@ class CategoriesController extends Controller
         $category = Models\Categories::all()
                     ->sortBy('id');
        
-       return view('Admin/Cate/listcate',['listCate'=> $category]);
+       return view('Admin/adlistCate',['listCate'=> $category]);
 
     }
 
@@ -45,7 +45,7 @@ class CategoriesController extends Controller
         //
      
         
-        return view('Admin/Cate/addcate');
+        return view('Admin/addcate');
 
     }
 

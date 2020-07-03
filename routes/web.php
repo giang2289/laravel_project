@@ -24,7 +24,7 @@ Route::get('/', function () {
 });
 
 	//Controller Admin Category
-Route::group(['namespace'=>'Admin','prefix'=>'AdminCat'],function(){
+Route::group(['namespace'=>'Admin','prefix'=>'Admin'],function(){
 	
 	// Route resource Admin Product
 	Route::get('/','CategoriesController@index')->name('indexCate');

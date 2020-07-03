@@ -1,8 +1,7 @@
 
 
 
-
-@extends('Admin.Cate.indexAdCate')
+@extends('layouts.adminlayout')
 
 @section('Admin.content')
 
