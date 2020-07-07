@@ -77,6 +77,25 @@ h1{margin :0;}
     width:60%;
     margin:0 auto;
 }
+.reg-input{
+    width: 150%;
+    height: 30px;
+    margin-left: 15px;
+}
+.rdo{
+    margin-left: 15px;
+}
+.dktk{
+    width: 80%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    background: #c8aa7b;
+    color: #FFF;
+}
+.dktk:focus{
+    outline: none;
+}
 .d-f-ct{
     display:flex;
     justify-content:center;
@@ -269,6 +288,7 @@ a:hover{
     color:#c8aa7b;
 }
 .m-b-10{margin-bottom:1.5rem; }
+.m-b-50{margin-bottom: 50px;}
 .error-text-404{
     font-family :PlayfairDisplay;
     line-height:20rem;

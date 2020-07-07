@@ -1431,6 +1431,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-display: swap;
+  text-align: center;
 }
 .display-2 > .mbr-iconfont {
   font-size: 4.8rem;
@@ -1455,6 +1456,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   font-display: swap;
+  text-align: center;
 }
 .display-7 > .mbr-iconfont {
   font-size: 1.92rem;
@@ -2702,6 +2704,7 @@ section.lazy-placeholder:after {
   max-width: 700px;
   margin: 0 auto;
 }
+
 @media (max-width: 768px) {
   .cid-s2U4VlCXdy .dot {
     display: none;
