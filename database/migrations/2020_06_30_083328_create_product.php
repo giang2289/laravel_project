@@ -18,7 +18,7 @@ class CreateProduct extends Migration
             $table->string('name');
             $table->string('image');
             $table->float('price');
-            $table->float('content');
+            $table->string('content');
             $table->string('description');       
             $table->tinyInteger('status');
             $table->string('unit');
